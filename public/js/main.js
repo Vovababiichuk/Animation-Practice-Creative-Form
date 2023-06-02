@@ -1,5 +1,5 @@
 const mainDiv = document.getElementById("bg");
-const backgrounds = ["background-1", "background-2", "background-3", "background-4", "background-5"];
+const backgrounds = ["background-1", "background-2", "background-3", "background-4", "background-5", "background-6"];
 let currentIndex = -1;
 
 function toggleBackground() {
