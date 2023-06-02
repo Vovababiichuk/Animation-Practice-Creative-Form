@@ -95,11 +95,12 @@ section {
 
 .wrapper {
   position: absolute;
-  left: 30px;
+  left: 40px;
   font-family: "Major Mono Display", monospace;
   margin-top: 5%;
   color: red;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .line__1,
@@ -205,6 +206,11 @@ section {
   align-items: center;
   backdrop-filter: blur(15px);
   box-shadow: 0px 0px 15px #0ff;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.login-box:hover {
+  box-shadow: 0px 0px 28px #0ff;
 }
 
 h2 {
@@ -529,5 +535,21 @@ button {
 
 
 
+/* Bounce In */
+.hvr-bounce-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
 
 
